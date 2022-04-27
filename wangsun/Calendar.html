@@ -1,0 +1,125 @@
+<!doctype html>
+<!--
+	The7 by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="google-site-verification" content="sPJTM3Spf8vn8YTF4ianxo8PcBiZq5QAFYfjD8-Pr34" />
+        <!--google 검색 노출을 위함-->
+        
+        <title>Dasa High School Dormitory</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/simplegrid.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/lightcase.css">
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.transitions.css" />
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        
+        <link href='main.css' rel='stylesheet' />
+        <script src='main.js'></script>
+        <script>
+    
+          document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+              initialView: 'dayGridMonth',
+                googleCalendarApiKey: 'AIzaSyBSWbDoLjlffD2zNa4z6IVI1rPeEY89N9I',
+                events: {
+                googleCalendarId: 'cisa66ef7v155s8820rr154reg@group.calendar.google.com',
+                className: 'gcal-event'},
+                eventClick: function(info){
+                    info.jsEvent.stopPropagation();
+                    info.jsEvent.preventDefault();
+                } 
+            });
+            calendar.render();
+          });
+    
+        </script>
+
+<!--let calendar = new Calendar(calendarEl, {
+  plugins: [ googleCalendarPlugin ],
+  googleCalendarApiKey: '<YOUR API KEY>',
+  events: {
+    googleCalendarId: 'abcd1234@group.calendar.google.com'
+  }
+});-->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+           <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+           <!--[if lt IE 9]>
+             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+           <![endif]-->
+    </head>
+
+    <body><!--style="background-color: rgb(212, 208, 200);"-->
+        <!-- Header -->
+        <header id="top-header" class="header-home">
+            <div class="grid">
+                <div class="col-1-1">
+                    <div class="content">
+                        <div class="logo-wrap">
+                            <a href="index.html" class="logo">The 7</a>
+                        </div>
+                        <nav class="navigation">
+                            <input type="checkbox" id="nav-button">
+                            <label for="nav-button" onclick></label>
+                            <ul class="nav-container">
+                                <li><a href="index.html" class="current">Home</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="calendar"></div>
+        <!--<script>
+                $('#calendar'). fullCalendar ({
+                    googleCalendarApiKey : 'AIzaSyBSWbDoLjlffD2zNa4z6IVI1rPeEY89N9I',
+                header: {
+                    left: '',
+                    center: 'prev, title, next',
+                        // right: 'month, basicWeek, agendaDay'
+                        right: ''
+                },
+                monthYearFormat: 'MMMM YYYY',
+                ventLimit: true,
+                fixedWeekCount: false,
+                defaultView: 'month',
+                    dayNamesShort: ["S","M","T","W","T","F","S"],
+                    buttonText: {
+                    today : "오늘",
+                    month : "월별",
+                    week : "주별",
+                    day : "일별",
+                    },
+                    eventSources : // 한국 기념일 ko.south_korea 추가
+                        [ { googleCalendarId : 'cisa66ef7v155s8820rr154reg@group.calendar.google.com'}
+                            , { googleCalendarId : 'ko.south_korea#holiday@group.v.calendar.google.com'
+                            , className : 'ko_event' } ]
+                });
+        </script>
+    -->
+        <!--
+        <iframe src="https://calendar.google.com/calendar/embed?src=cisa66ef7v155s8820rr154reg%40group.calendar.google.com&ctz=Asia%2FSeoul" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        -->
+    </body>
+</html>
